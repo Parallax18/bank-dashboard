@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import AccountDetailsCard from '../components/AccountDetailsCard'
 import List from '../components/Banks/List'
+import Expenses from '../components/Expenses'
 import StandingOrder from '../components/StandingOrder'
 import TransactionsTable from '../components/TransactionsTable'
 import styles from '../styles/Home.module.css'
@@ -25,8 +26,8 @@ export default function Home() {
         <List />
         <Grid templateColumns={{ sm: '1fr 1fr', md: '3fr 2fr' }} gap={6}>
           <TransactionsTable />
-          <TransactionsTable />
-          </Grid>
+          <Expenses />
+        </Grid>
       </Stack>
     </main>
 
